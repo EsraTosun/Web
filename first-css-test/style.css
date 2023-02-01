@@ -1,0 +1,73 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-color: #e3e3e3;
+}
+
+.header-container
+{
+    background-color: #ffffff;
+    flex-direction: row;  /* içindeki nesneler yan yana mı alt alta mı sıralansın */
+    align-items: center;  /* dikeyde ortalamamızı sağlar */
+    justify-content: space-between; /*ilk nesneyi en başa
+    son nesneyi en sana kalan nesneleri hesapla demek */
+    padding: 20px;
+    display: flex;  /* yazmak zorundayız */
+    /* justify-content: center;   yatayda ortalama */
+}
+
+.header-left-side-container
+{
+    flex-direction: row;  /* içindeki nesneler yan yana mı alt alta mı sıralansın */
+    align-items: center;  /* dikeyde ortalamamızı sağlar */
+    display: flex;  /* yazmak zorundayız */
+}
+
+.header-desc-container
+{
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+}
+
+.logo
+{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header-title
+{
+    margin-bottom: 5px;
+    font-weight: bold;  /* yazyıyı kalın yapar */
+    font-size: 24px;
+}
+
+.header-content
+{
+    font-size: 18px;
+    color:rgb(150,150,150);
+}
+
+.header-menu /* a ların hepsine bu özelliği ver */ 
+{
+    flex-direction: row;
+    display: flex;
+    gap: 20px;  /* içindeki nesnelere boşluk bırak */
+}
+
+.header-menu > a  /* a ların hepsine bu özelliği ver */ 
+{
+    text-decoration: none; /* altındaki çizgiyi kaldırır */
+    font-size: 20px;
+    color:#444444;
+}
+
+.header-menu > a:hover  /* yazının üstüne gelince olacaklar */ 
+{
+    color: red;
+}
